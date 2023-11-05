@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--BS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!--Favicon-->
+    <link rel="shorcut icon" href="multimedia/brand/Favicon-ICA.ico">
+
+    <title>IES Code Alliance</title>
+</head>
+<body>
+    <header class="min__header"><!--Comienzo Header-->
+        <a class="min__header-logo" href="index.html">IES CODE ALLIANCE</a> 
+        <a href="pages/inicio-sesion.html"><button class="min__header-boton" type="button">Iniciar sesion</button></a>
+    </header><!--Fin Header-->
+
+    <main class="main__inicio"><!--Comienzo Main-->
+
+        <section class="main__nuevo-cliente">
+            <h1 class="main__nuevo-cliente-h1">Cursos y videos ilimitados al alcance de tu mano</h1>
+            <h2 class="main__nuevo-cliente-h2">Disfruta donde tu quieras</h2>
+            <h3 class="main__nuevo-cliente-h3">¿Quieres ver Code Alliance ya? Ingresa tu email para crear una cuenta</h3>
+
+            <form class="main__registro">
+                <input class="main__nuevo-correo" type="text" placeholder="Email">
+                <a href="pages/nuevo-usuario.html"><button class="min__boton-comenzar" type="button">Comenzar</button></a>
+            </form>
+        </section>
+
+        <section class="main__publicidad">
+            <div class="main__elementos-publicidad">
+                <div class="main__textos-publicidad">
+                    <h2 class="main__textos-publicidad-h2">Disfruta en tus dispositivos</h2>
+                    <h3 class="main__textos-publicidad-h3">Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, <br> reproductores de Blu-ray y más.</h3>
+                </div>
+                <div class="main__imagen-publicidad">
+                    <img src="assets/publicity/AW-Imagen-contenedor-2.jpg" alt="Imagen-de-televisor">
+                </div>
+            </div>
+        </section>
+
+        <div id="accordion" class="main__preguntas">
+            <h2>Preguntas frecuentes</h2>
+            <div class="card">
+                <div class="card-header">
+                        <a class="collapsed btn main__boton-desplegable" data-bs-toggle="collapse" href="#collapseOne">
+                            ¿Qué es IES Code Alliance?
+                        </a>
+                </div>
+                <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                        <div class="card-body main__contenido-boton">
+                            IES Code Alliance es un servicio de streaming que ofrece una gran variedad de videos de programación destinados a los estudiantes del colegio universitario IES21.
+                            Todo lo que quieras ver, sin límites ni comerciales, de manera gratuita. Siempre hay algo nuevo que aprender.
+                        </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed btn main__boton-desplegable" data-bs-toggle="collapse" href="#collapseTwo">
+                        ¿Cuanto cuesta IES Code Alliance?
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body main__contenido-boton">
+                        Disfruta IES Code Alliance en tu smartphone, tablet, smart TV, laptop o dispositivo de streaming, todo de manera gratuita.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed btn main__boton-desplegable" data-bs-toggle="collapse" href="#collapseThree">
+                        ¿Donde puedo ver IES Code Alliance?
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body main__contenido-boton">
+                        Disfruta donde quieras, cuando quieras y como quieras. Inicia sesión en tu cuenta en IES Code Alliance para ver contenido al instante a través de IESCodeAlliance.com desde tu computadora personal o en cualquier dispositivo con conexión a internet
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed btn main__boton-desplegable" data-bs-toggle="collapse" href="#collapseFour">
+                            ¿Que puedo ver IES Code Alliance?
+                    </a>
+                </div>
+                <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body main__contenido-boton">
+                            IES Code Alliance tiene un amplio catálogo de videos, cursos y más. Todo lo que quieras ver, cuando quieras.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main><!--Fin Main-->
+
+    <div class="main__nuevo-cliente"><!--Comienzo nuevo registro-->
+        <h2 class="main__nuevo-cliente-h2">¿Quieres ver IES Code Alliance ya? Ingresa tu email para crear una cuenta.</h2>
+        <form class="main__registro">
+            <input class="main__nuevo-correo" type="text" placeholder="Email">
+            <a href="pages/nuevo-usuario.html"><button class="min__boton-comenzar" type="button">Comenzar</button></a>
+        </form>
+    </div><!--Fin nuevo registro-->
+
+    <footer class="min__footer"><!--Comienzo Footer-->
+
+        <div class="min__footer-contenedor"><!--Inicio help-->
+            <h2  class="min__footer-titulo-contenedor">Ayuda</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo deleniti iusto totam, numquam tenetur ipsum quo ut aliquam aperiam eum ex recusandae, possimus, impedit minus porro autem ad eos neque.</p>
+        </div><!--Fin help-->
+
+        <div class="min__footer-contenedor"><!--Inicio about me-->
+            <h2 class="footer__titulo-contenedor">Acerca de nosotros</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime soluta odit molestiae quae aliquid in recusandae tempore perspiciatis quam optio, vitae autem cum provident natus sequi eum repellendus dicta?</p>
+        </div><!--Fin about me-->
+
+        <div class="min__footer-redes"><!--Inicio iconos footer-->
+            <a href="https://www.linkedin.com/in/rodrigoerodriguez/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/RodrigoERodriguez"><i class="fa-brands fa-square-github"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+        </div><!--Fin iconos footer-->
+
+    </footer><!--Fin Footer-->
+
+    <!-- Inicio SCRIPT -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"
+    ></script>    
+</body>
+</html>
