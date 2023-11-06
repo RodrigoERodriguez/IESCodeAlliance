@@ -30,7 +30,7 @@ html{
 
 /* Elementos Estaticos Main */
 /* NavBar */
-.min__header{
+.main__header{
     background-color: var(--gray) ;
     display: flex;
     justify-content: space-between;
@@ -39,7 +39,7 @@ html{
     padding: 15px;
 }
 
-.min__header-logo{
+.main__header-logo{
     color: var(--orange) !important;
     font-size: 30px;
     font-weight: bold;
@@ -49,7 +49,7 @@ html{
 }
 
 /* Comienzo Botones */
-:is(.min__header-boton , .min__boton-comenzar){
+:is(.main__inicio-sesion , .main__boton-comenzar){
     background-color:  var(--orange)  !important;
     height: 60px;
     width: 150px;
@@ -61,7 +61,7 @@ html{
     cursor: pointer;
 }
 
-:is(.min__header-boton, .min__header-comenzar:hover) :hover{
+:is(.main__inicio-sesion, .main__boton-comenzar) :hover{
     box-shadow: 0 0 15px 10px var(--button-hover);
 }
 
@@ -225,7 +225,7 @@ html{
     width: 400px;
     font-size: 20px;
     font-weight: bold;
-    border: 3px solid  var(--black) ;
+    border: 2px solid  var(--black) ;
     border-radius: 4px 4px 4px 4px;
     margin-right: 30px;
 }
@@ -298,20 +298,12 @@ html{
     margin-bottom: 40px;
 }
 
-.main__contenido-boton{
-    height: auto;
-    width: 500px;
-    color: var(--white);
-    font-weight: bold;
-    text-align: center;
-}
-
-.card {
+.main__card {
     background-color:  var(--orange) ;
     color:  var(--black) ;
 }
 
-.main__boton-desplegable {
+.main__questions {
     height: 60px;
     width: 500px;
     background-color:  var(--orange) ;
@@ -324,9 +316,17 @@ html{
     margin-bottom: 10px;
 }
 
-.contenido-boton{
-    background: rgb(42,46,48);
-    background: linear-gradient(90deg, rgba(42,46,48,1) 23%, rgba(244,101,48,1) 68%, rgba(118,118,118,1) 97%);
+.main__content-questions{
+    height: 60px;
+    width: 500px;
+    background-color:  var(--orange) ;
+    color:  var(--black) ;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 10px;
     color: var(--white);
     font-weight: bold;
     text-align: center;
@@ -334,15 +334,14 @@ html{
 
 /* Paginas */
 /* Inicio-sesion.html */
-/* Main */
-.is__contenedor{
+.log__contenedor{
     background: rgb(42,46,48);
     background: linear-gradient(90deg, rgba(42,46,48,1) 23%, rgba(244,101,48,1) 68%, rgba(118,118,118,1) 97%);
     height: 80vh;
     padding: 50px;
 }
 
-.is__contenedor-inicio-de-sesion{
+.log__contenedor-inicio-de-sesion{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -351,7 +350,7 @@ html{
     margin-top: 100px;
 }
 
-.is__contenedor-datos{
+.log__contenedor-datos{
     height: 500px;
     width: 400px;
     border: 2px  var(--black)  solid;
@@ -360,7 +359,7 @@ html{
     align-items: center;
 }
 
-.is__contenedor-datos h2{
+.log__contenedor-datos h2{
     color: var(--white);
     font-size: 30px;
     font-weight: bold;
@@ -369,7 +368,7 @@ html{
     margin-bottom: 30px;
 }
 
-.is__datos{
+.log__datos{
     font-size: 25px;
     background-color: transparent;
     border: 1px  var(--black)  solid;    
@@ -377,14 +376,14 @@ html{
     margin-bottom: 30px;
 }
 
-.is__datos::placeholder{
+.log__datos::placeholder{
     color:  var(--white) ;
     font-size: 20px;
     font-weight: bold;
     text-align: left;
 }
 
-.is__iniciar-sesion{
+.log__iniciar-sesion{
     background-color:  var(--orange) ;
     height: 60px;
     width: 280px;
@@ -397,42 +396,42 @@ html{
     margin-bottom: 30px;
 }
 
-.is__iniciar-sesion:hover{
+.log__iniciar-sesion:hover{
     box-shadow: 0 0 15px 10px var(--button-hover);
 }
 
-.is__contenedor-datos a{
+.log__contenedor-datos a{
     color: var(--white);
     text-decoration: none;
     font-weight: bold;
 }
 
-.is__ayuda{
+.log__ayuda{
     font-size: 15px;
     margin-left: 20px;
 }
 
-.is__ayuda:hover{
+.log__ayuda:hover{
     text-decoration: underline;
 }
 
-.is__Suscríbete{
+.log__Suscríbete{
     font-size: 19px;
     margin-top: 40px;
     font-weight: bold;
     color: var(--white);
 }
 
-.is__Suscríbete a{
+.log__Suscríbete a{
     color: var(--black);
 }
 
-.is__Suscríbete a:hover{
+.log__Suscríbete a:hover{
     text-decoration: underline;
     color: var(--white);
 }
 
-.is__chk-texto-recuerdame{
+.log__chk-texto-recuerdame{
     font-size: 17px;
     font-weight: bold;
     color: var(--white);
@@ -440,15 +439,14 @@ html{
 }
 
 /* Nuevo-usuario.html */
-/* Main */
-.nu__contenedor-nuevo-usuario{
+.register__contenedor-nuevo-usuario{
     background: rgb(42,46,48);
     background: linear-gradient(90deg, rgba(42,46,48,1) 23%, rgba(244,101,48,1) 68%, rgba(118,118,118,1) 97%);
     height: 80vh;
     padding: 50px;
 }
 
-.nu__nuevo-usuario{
+.register__nuevo-usuario{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -457,7 +455,7 @@ html{
     margin-top: 100px;
 }
 
-.nu__contenedor-datos-usuario{
+.register__contenedor-datos-usuario{
     height: 550px;
     width: 400px;
     border: 2px  var(--black)  solid;
@@ -466,7 +464,7 @@ html{
     align-items: center;
 }
 
-.nu__contenedor-datos-usuario h2{
+.register__contenedor-datos-usuario h2{
     color: var(--white);
     font-size: 30px;
     font-weight: bold;
@@ -475,7 +473,7 @@ html{
     margin-bottom: 30px;
 }
 
-.nu_datos{
+.register_datos{
     font-size: 25px;
     background-color: transparent;
     border: 1px  var(--black)  solid;    
@@ -483,14 +481,14 @@ html{
     margin-bottom: 20px;
 }
 
-.nu_datos::placeholder{
+.register_datos::placeholder{
     color:  var(--white) ;
     font-size: 20px;
     font-weight: bold;
     text-align: left;
 }
 
-.nu__boton-registrate{
+.register__boton-registrate{
     background-color:  var(--orange) ;
     height: 60px;
     width: 280px;
@@ -503,33 +501,33 @@ html{
     margin-bottom: 30px;
 }
 
-.nu__boton-registrate:hover{
+.register__boton-registrate:hover{
     box-shadow: 0 0 15px 10px var(--button-hover);
 }
 
-.nu__ayuda{
+.register__ayuda{
     font-size: 15px;
     color: var(--white);
     font-weight: bold;
     text-align: center;
 }
 
-.nu__ayuda:hover{
+.register__ayuda:hover{
     text-decoration: underline;
 }
 
-.nu__usuario{
+.register__usuario{
     font-size: 19px;
     margin-top: 30px;
     font-weight: bold;
     color: var(--white);
 }
 
-.nu__usuario a:hover{
+.register__usuario a:hover{
     text-decoration: underline;
 }
 
-.nu__usuario a{
+.register__usuario a{
     color: var(--black);
     text-decoration: none;
     font-weight: bold;
