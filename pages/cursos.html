@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <!--Favicon-->
     <!-- <link rel="stylesheet" href="../assets/multimedia/imagenes-logos/Favicon-ICA.ico"> -->
-    <title>Pagina de inicio - ICA</title>
+    <title>Pagina de inicio - IesCodeAlliance</title>
 </head>
 <body>
     <header class="app__header">  <!-- Comienzo Header -->
@@ -42,7 +42,22 @@
             </div>
         </nav>
     </header>
-    
+
+    <form class="modelos-filtro" id="id-modelos-filtro">
+        <label for="id-categoria">
+            Dormitorios
+            <select name="categoria" id="id-categoria">
+                <option value="0">todos</option>
+                <option value="1">C++</option>
+                <option value="2">JAVASCRIPT</option>
+                <option value="3">HTML</option>
+                <option value="4">CSS</option>
+                <option value="5">SASS</option>
+                <option value="6">REACT JS</option>
+            </select>
+        </label>
+    </form>
+
     <main class="c__contenedor-catalogo">
 
         <div id="curso__grupo-contenedor" class="curso__grupo-contenedor">

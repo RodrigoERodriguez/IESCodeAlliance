@@ -3,10 +3,10 @@
     {
         "nombre": "C++",
         "videos": [
-            { "titulo": "Curso Completo de C++ para Principiantes", "lenguaje": "Espanol", "autor": "Lucas Moy", "duracion": "06:39:13", "miniatura": "../assets/miniatures/c++/miniature-cplus-1.jpg", "link": "https://www.youtube.com/watch?v=VQo6gj7-hw8&ab_channel=ATLAcademy%28byLucasMoy%29"},
-            { "titulo": "C++ Programming Course", "autor": "FreeCodeCamp", "lenguaje": "Ingles", "duracion": "31:07:29", "miniatura": "../assets/miniatures/c++/miniature-cplus-2.jpg", "link": "https://www.youtube.com/watch?v=8jLOx1hD3_o&ab_channel=freeCodeCamp.org"},
-            { "titulo": "C++ DE 0 A HEROE", "autor": "Programador novato", "lenguaje": "Espanol", "duracion": "24:41:00", "miniatura": "../assets/miniatures/c++/miniature-cplus-3.jpg", "link": "https://www.youtube.com/watch?v=APN8aCyPvww&list=PLCTD_CpMeEKTofxs7iottRxJ5YPM7BOcc&ab_channel=ProgramadorNovato"},
-            { "titulo": "Programación con C++ para videojuegos", "lenguaje": "Espanol", "autor": "Mi cuadernbo de Videojuegos", "duracion": "04:10:20", "miniatura": "../assets/miniatures/c++/miniature-cplus-4.jpg", "link": "https://www.youtube.com/watch?v=ves0_JB-fEA&list=PLcLC2I7iifCk3ifpp5bZOl2O28wPSJq47&ab_channel=MiCuadernodeVideojuegos"}
+            { "titulo": "Curso Completo de C++ para Principiantes", "lenguaje": "Espanol", "autor": "Lucas Moy", "duracion": "06:39:13", "miniatura": "../assets/miniatures/c++/miniature_cplus-1.jpg", "link": "https://www.youtube.com/watch?v=VQo6gj7-hw8&ab_channel=ATLAcademy%28byLucasMoy%29"},
+            { "titulo": "C++ Programming Course", "autor": "FreeCodeCamp", "lenguaje": "Ingles", "duracion": "31:07:29", "miniatura": "../assets/miniatures/c++/miniature_cplus-2.jpg", "link": "https://www.youtube.com/watch?v=8jLOx1hD3_o&ab_channel=freeCodeCamp.org"},
+            { "titulo": "C++ DE 0 A HEROE", "autor": "Programador novato", "lenguaje": "Espanol", "duracion": "24:41:00", "miniatura": "../assets/miniatures/c++/miniature_cplus-3.jpg", "link": "https://www.youtube.com/watch?v=APN8aCyPvww&list=PLCTD_CpMeEKTofxs7iottRxJ5YPM7BOcc&ab_channel=ProgramadorNovato"},
+            { "titulo": "Programación con C++ para videojuegos", "lenguaje": "Espanol", "autor": "Mi cuadernbo de Videojuegos", "duracion": "04:10:20", "miniatura": "../assets/miniatures/c++/miniature_cplus-4.jpg", "link": "https://www.youtube.com/watch?v=ves0_JB-fEA&list=PLcLC2I7iifCk3ifpp5bZOl2O28wPSJq47&ab_channel=MiCuadernodeVideojuegos"}
         ]
     },
     {
