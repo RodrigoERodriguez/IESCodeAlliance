@@ -533,7 +533,8 @@ html{
     font-weight: bold;
 }
 
-/* Catalogo Videos */
+/* Menu Inicio */
+/*Propiedades Card Top3*/
 .app__top-3{
     display: flex;
     background: rgb(42,46,48);
@@ -579,13 +580,13 @@ html{
 }
 
 /* Propiedades de Recomendados*/
-.app__destacados{
+.app__capitulos-destacados{
     display: flex;
     background: rgb(42,46,48);
     background: linear-gradient(90deg, rgba(42,46,48,1) 23%, rgba(244,101,48,1) 68%, rgba(118,118,118,1) 97%);
 }
 
-.app__texto-destacados{
+.app__texto-capitulos-destacados{
     margin-top: 40px;
     margin-left: 20px;
     text-align: center;
@@ -595,7 +596,7 @@ html{
     color: var(--white);
 }
 
-.app__card-destacados{
+.app__card-capitulos-destacados{
     display: flex;
     flex: 1;
     flex-direction: row;
@@ -606,21 +607,21 @@ html{
     margin-left: -100px;
 }
 
-.app__card-destacados img{
+.app__card-capitulos-destacados img{
     height: 170px;
     width: auto;
     padding: 10px;
     margin-bottom: 40px;
 }
 
-/* Propiedades de Cursos*/
-.app__cursos{
+/* Propiedades de Lenguajes disponibles*/
+.app__lenguajes{
     display: flex;
     background: rgb(42,46,48);
     background: linear-gradient(90deg, rgba(42,46,48,1) 23%, rgba(244,101,48,1) 68%, rgba(118,118,118,1) 97%);
 }
 
-.app__texto-cursos{
+.app__texto-lenguajes{
     margin-top: 40px;
     margin-left: 20px;
     text-align: center;
@@ -630,7 +631,7 @@ html{
     color: var(--white);
 }
 
-.app__card-cursos{
+.app__card-lenguajes{
     display: flex;
     flex: 1;
     align-items: center;
@@ -640,12 +641,113 @@ html{
     margin-bottom: 90px;
 }
 
-.app__card-cursos img{
+.app__card-lenguajes img{
     height: 100px;
     width: 100px;
 }
 
-/* Propiedades Cursos*/
+/* Menu Cursos */
+/* Propiedades Lista desplegable*/
+.lenguajes-filtro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.lenguajes-filtro label {
+    padding: 5px 10px;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.lenguajes-filtro button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lenguajes-filtro button img {
+    width: 20px;
+}
+
+.lenguajes-filtro select {
+    height: 35px;
+    padding-inline: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.lenguajes-filtro option {
+    font-weight: bold;
+}
+
+/*Propiedades Visuales Cursos*/
+.cursos__contenedor-catalogo{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(42,46,48);
+    background: linear-gradient(90deg, rgba(42,46,48,1) 23%, rgba(244,101,48,1) 68%, rgba(118,118,118,1) 97%);
+    padding: 20px;
+}
+
+
+.cursos__contenedor-videos-categoria{
+    padding: 0 9%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.cursos__video-categoria img{
+    height: 400px;
+    width: auto;
+}
+
+.cursos__video-categoria img:hover{
+    transform: scale(1.1);
+}
+
+/* Propiedades Texto Cursos*/
+.cursos__titulo-categoria{
+    padding: 10px;
+    display: inline;
+    color: var(--white);
+    font-weight: 300;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    border: 2px solid var(--orange);
+    border-radius: 6px;
+} 
+
+.cursos__texto-titulo{
+    margin-top: 30px;
+    text-align: left;
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.cursos__texto-autor{
+    margin-top: 10px;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.cursos__texto-duracion{
+    margin-top: 10px;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--white);
+}
+
 
 
 /* Querys */

@@ -14,7 +14,7 @@ fetch("../data/cursos.json")
 //---------------------------------------------------------------//
 
 //- ELEMENTOS DEL DOM -//
-const contenedorCursos = document.querySelector("#curso__grupo-contenedor")
+const contenedorCursos = document.querySelector("#cursos__grupo-contenedor")
 
 //---------------------------------------------------------------//
 
@@ -27,14 +27,14 @@ function cargarCursos() {
         div.classList.add("curso");
         
         div.innerHTML = `
-            <h2 class="c__titulo-categoria">${curso.nombre}</h2>
-            <div class="c__contenedor-videos-categoria">
+            <h2 class="cursos__titulo-categoria">${curso.nombre}</h2>
+            <div class="cursos__contenedor-videos-categoria">
                 ${curso.videos.map(video => `
-                    <div class="c__video-categoria">
-                        <img id="catalogo__imagen-curso" src="${video.miniatura}" alt="${video.titulo}">
-                        <h3>${video.titulo}</h3>
-                        <h3>${video.autor}</h3>
-                        <h3>${video.duracion}</h3>
+                    <div class="cursos__video-categoria">
+                        <img id="cursos__imagen-curso" src="${video.miniatura}" alt="${video.titulo}">
+                        <h3 class="cursos__texto-titulo">${video.titulo}</h3>
+                        <h3 class="cursos__texto-autor">${video.autor}</h3>
+                        <h3 class="cursos__texto-duracion">${video.duracion}</h3>
                     </div>
                 `).join('')}
             </div>

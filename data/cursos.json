@@ -31,7 +31,7 @@
         "nombre": "CSS",
         "videos": [
             { "titulo": "CREA una PAGINA WEB desde CERO (HTML y CSS) CURSO COMPLETO", "lenguaje": "Espanol", "autor": "AlexCG Design", "duracion": "02:15:50", "miniatura": "../assets/miniatures/css/miniature-css-1.jpg", "link": "https://www.youtube.com/watch?v=C73S3oSnZLE&ab_channel=AlexCGDesign"},
-            { "titulo": "APRENDE CSS desde CERO ✅ (tutorial completo)", "lenguaje": "Espanol", "autor": "AlexCG Design", "duracion": "09:25:25", "miniatura": "../assets/miniatures/css/miniature-css-2.jpg", "link": "https://www.youtube.com/watch?v=WfDqFArJnYA&ab_channel=AlexCGDesign"},
+            { "titulo": "APRENDE CSS desde CERO (tutorial completo)", "lenguaje": "Espanol", "autor": "AlexCG Design", "duracion": "09:25:25", "miniatura": "../assets/miniatures/css/miniature-css-2.jpg", "link": "https://www.youtube.com/watch?v=WfDqFArJnYA&ab_channel=AlexCGDesign"},
             { "titulo": "Aprende CSS ahora! curso completo GRATIS desde cero", "lenguaje": "Espanol", "autor": "HolaMundo", "duracion": "02:05:27", "miniatura": "../assets/miniatures/css/miniature-css-3.jpg", "link": "https://www.youtube.com/watch?v=wZniZEbPAzk&ab_channel=HolaMundo"},
             { "titulo": "Curso de CSS desde CERO (Completo)", "lenguaje": "Espanol", "autor": "Soy Dalto", "duracion": "09:46:54", "miniatura": "../assets/miniatures/css/miniature-css-4.jpg", "link": "https://www.youtube.com/watch?v=OWKXEJN67FE&ab_channel=SoyDalto"}
         ]
