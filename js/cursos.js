@@ -15,6 +15,8 @@ fetch("../data/cursos.json")
 
 //- ELEMENTOS DEL DOM -//
 const contenedorCursos = document.querySelector("#cursos__grupo-contenedor")
+const eleccionLenguaje = document.getElementById("cursos__lenguajes-filtro");
+const botonFiltrado = document.getElementById("cursos__boton-filtrar");
 
 //---------------------------------------------------------------//
 
@@ -43,3 +45,7 @@ function cargarCursos() {
         contenedorCursos.appendChild(div);
     });
 }
+
+
+//- Eventos -//
+

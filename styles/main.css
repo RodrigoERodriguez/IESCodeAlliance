@@ -28,6 +28,11 @@ html{
     scroll-behavior: smooth;
 }
 
+main{
+    background: rgb(42,46,48);
+    background: linear-gradient(90deg, rgba(42,46,48,1) 23%, rgba(244,101,48,1) 68%, rgba(118,118,118,1) 97%);
+}
+
 /* Elementos Estaticos Main */
 /* NavBar */
 .main__header{
@@ -65,7 +70,7 @@ html{
     box-shadow: 0 0 15px 10px var(--button-hover);
 }
 
-/* Footer fijo para TODOS*/
+/* Footer fijo para TODOS */
 .footer__footer{
     background: var(--gray) ;
     display: flex;
@@ -106,9 +111,9 @@ html{
     transform: scale(1.1);
 }
 
-/* NavBar fijo para App*/
+/* NavBar fijo para App */
 .app__header-logo{
-    color: #F46530 !important;
+    color: var(--orange) !important;
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;
@@ -186,11 +191,10 @@ html{
     background-color: var(--orange);
     border: var(--black) ;
 }
+
 /* Index.html */
 /* Container-primero */
 .main__nuevo-cliente{
-    background: rgb(42,46,48);
-    background: linear-gradient(90deg, rgba(42,46,48,1) 23%, rgba(244,101,48,1) 68%, rgba(118,118,118,1) 97%);
     height: 400px;
     padding: 50px;
 }
@@ -236,6 +240,7 @@ html{
     font-weight: bold;
     text-align: left;
 }
+
 /* Container-segundo */
 .main__elementos-publicidad{
     display: flex;
@@ -245,8 +250,6 @@ html{
 }
 
 .main__publicidad{
-    background: rgb(42,46,48);
-    background: linear-gradient(90deg, rgba(42,46,48,1) 23%, rgba(244,101,48,1) 68%, rgba(118,118,118,1) 97%);
     height: 500px;
     padding: 50px;
 }
@@ -280,8 +283,6 @@ html{
 
 /* Container-tercero */
 .main__preguntas{
-    background: rgb(42,46,48);
-    background: linear-gradient(90deg, rgba(42,46,48,1) 23%, rgba(244,101,48,1) 68%, rgba(118,118,118,1) 97%);
     height: 300px;
     padding: 350px;
     display: flex;
@@ -335,8 +336,6 @@ html{
 /* Paginas */
 /* Inicio-sesion.html */
 .log__contenedor{
-    background: rgb(42,46,48);
-    background: linear-gradient(90deg, rgba(42,46,48,1) 23%, rgba(244,101,48,1) 68%, rgba(118,118,118,1) 97%);
     height: 80vh;
     padding: 50px;
 }
@@ -440,8 +439,6 @@ html{
 
 /* Nuevo-usuario.html */
 .register__contenedor-nuevo-usuario{
-    background: rgb(42,46,48);
-    background: linear-gradient(90deg, rgba(42,46,48,1) 23%, rgba(244,101,48,1) 68%, rgba(118,118,118,1) 97%);
     height: 80vh;
     padding: 50px;
 }
@@ -534,25 +531,24 @@ html{
 }
 
 /* Menu Inicio */
-/*Propiedades Card Top3*/
+/* Propiedades Top3 */
 .app__top-3{
-    display: flex;
-    background: rgb(42,46,48);
-    background: linear-gradient(90deg, rgba(42,46,48,1) 23%, rgba(244,101,48,1) 68%, rgba(118,118,118,1) 97%);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-gap: 300px;
 }
 
 .app__card-top3{
     display: flex;
-    flex: 1;
-    flex-direction: row;
     align-items: center;
     height: 400px;
     width: 400px;
-    margin-top: 100px;
-    margin-left: -200px;
+    margin-top: 200px;
+    margin-left: -500px;
     margin-bottom: 90px;
 }
-/* Propiedades Numeros Top3 */
+
 .app__numero-top3 img{
     height: 400px;
     width: 400px;
@@ -562,49 +558,42 @@ html{
     margin-right: -170px;
 }
 
-/* Propiedades Miniaturas Top3 */
 .app__miniatura-top3 img{
     height: 400px;
     width: 400px;
 }
 
-/* Propiedades texto Top3*/
 .app__titulo-top3{
     margin-top: 40px;
     margin-left: 20px;
-    text-align: center;
+    text-align: left;
     font-size: 35px;
     font-weight: bold;
-    text-align: center;
     color: var(--white);
 }
 
-/* Propiedades de Recomendados*/
+/* Propiedades Capitulos Destacados */
 .app__capitulos-destacados{
-    display: flex;
-    background: rgb(42,46,48);
-    background: linear-gradient(90deg, rgba(42,46,48,1) 23%, rgba(244,101,48,1) 68%, rgba(118,118,118,1) 97%);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(7, 2fr);
+    grid-gap: 100px;
 }
 
 .app__texto-capitulos-destacados{
     margin-top: 40px;
     margin-left: 20px;
-    text-align: center;
+    text-align: left;
     font-size: 35px;
     font-weight: bold;
-    text-align: center;
     color: var(--white);
 }
 
 .app__card-capitulos-destacados{
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    align-items: center;
     height: 300px;
     width: 300px;
-    margin-top: 100px;
-    margin-left: -100px;
+    margin-top: 150px;
+    margin-left: -200px;
 }
 
 .app__card-capitulos-destacados img{
@@ -614,31 +603,30 @@ html{
     margin-bottom: 40px;
 }
 
-/* Propiedades de Lenguajes disponibles*/
-.app__lenguajes{
-    display: flex;
-    background: rgb(42,46,48);
-    background: linear-gradient(90deg, rgba(42,46,48,1) 23%, rgba(244,101,48,1) 68%, rgba(118,118,118,1) 97%);
+.app__card-capitulos-destacados img:hover{
+    transform: scale(1.1);
+}
+
+/* Propiedades de Lenguajes disponibles */
+.app__lenguajes{  
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(7, 2fr);
 }
 
 .app__texto-lenguajes{
     margin-top: 40px;
     margin-left: 20px;
-    text-align: center;
+    text-align: left;
     font-size: 35px;
     font-weight: bold;
-    text-align: center;
     color: var(--white);
 }
 
 .app__card-lenguajes{
-    display: flex;
-    flex: 1;
-    align-items: center;
     height: 200px;
     width: 200px;
-    margin-top: 100px;
-    margin-bottom: 90px;
+    margin-top: 200px;
 }
 
 .app__card-lenguajes img{
@@ -646,51 +634,57 @@ html{
     width: 100px;
 }
 
+.app__card-lenguajes img:hover{
+    transform: scale(1.1);
+}
+
 /* Menu Cursos */
-/* Propiedades Lista desplegable*/
-.lenguajes-filtro {
+/* Propiedades Lista desplegable */
+.cursos__enguajes-filtro {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
     margin-bottom: 40px;
 }
 
-.lenguajes-filtro label {
+.cursos__lenguajes-filtro label {
     padding: 5px 10px;
     color: var(--white);
     font-weight: bold;
 }
 
-.lenguajes-filtro button {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.cursos__lenguajes-filtro button {
+    background-color: var(--orange);
+    width: 120px;
+    font-size: 20px;
+    font-weight: bold;
+    color:  var(--black) ;
+    border: 2px solid  var(--black) ;
+    border-radius: 7px 7px 7px 7px;
+    cursor: pointer;
 }
 
-.lenguajes-filtro button img {
+.cursos__lenguajes-filtro button i {
     width: 20px;
 }
 
-.lenguajes-filtro select {
+.cursos__lenguajes-filtro select {
     height: 35px;
     padding-inline: 10px;
     font-weight: bold;
     font-size: 1rem;
 }
 
-.lenguajes-filtro option {
+.cursos__lenguajes-filtro option {
     font-weight: bold;
 }
 
-/*Propiedades Visuales Cursos*/
+/* Propiedades Visuales Cursos */
 .cursos__contenedor-catalogo{
     width: 100%;
     min-height: 100vh;
-    background: rgb(42,46,48);
-    background: linear-gradient(90deg, rgba(42,46,48,1) 23%, rgba(244,101,48,1) 68%, rgba(118,118,118,1) 97%);
     padding: 20px;
 }
-
 
 .cursos__contenedor-videos-categoria{
     padding: 0 9%;
@@ -711,7 +705,7 @@ html{
     transform: scale(1.1);
 }
 
-/* Propiedades Texto Cursos*/
+/* Propiedades Texto Cursos */
 .cursos__titulo-categoria{
     padding: 10px;
     display: inline;
@@ -748,7 +742,68 @@ html{
     color: var(--white);
 }
 
+/* Propiedades Visuales Novedades */
+.novedades__contenedor-catalogo{
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
 
+.novedades__contenedor-videos-categoria{
+    padding: 0 9%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.novedades__video-categoria img{
+    height: 400px;
+    width: auto;
+}
+
+.novedades__video-categoria img:hover{
+    transform: scale(1.1);
+}
+
+/* Propiedades Texto Cursos */
+.novedades__titulo-categoria{
+    padding: 10px;
+    display: inline;
+    color: var(--white);
+    font-weight: 300;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    border: 2px solid var(--orange);
+    border-radius: 6px;
+} 
+
+.novedades__texto-titulo{
+    margin-top: 30px;
+    text-align: left;
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.novedades__texto-autor{
+    margin-top: 10px;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.novedades__texto-duracion{
+    margin-top: 10px;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--white);
+}
 
 /* Querys */
 @media (min-width:1200px){
