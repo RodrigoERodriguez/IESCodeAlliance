@@ -3,37 +3,28 @@
     {
         "nombre": "C#",
         "videos": [
-            { "titulo": "Curso Completo de C++ para Principiantes", "lenguaje": "Espanol", "autor": "Lucas Moy", "duracion": "06:39:13", "miniatura": "../assets/miniatures/c++/miniature_cplus-1.jpg", "link": "https://www.youtube.com/watch?v=VQo6gj7-hw8&ab_channel=ATLAcademy%28byLucasMoy%29"},
-            { "titulo": "C++ Programming Course", "autor": "FreeCodeCamp", "lenguaje": "Ingles", "duracion": "31:07:29", "miniatura": "../assets/miniatures/c++/miniature_cplus-2.jpg", "link": "https://www.youtube.com/watch?v=8jLOx1hD3_o&ab_channel=freeCodeCamp.org"},
-            { "titulo": "C++ DE 0 A HEROE", "autor": "Programador novato", "lenguaje": "Espanol", "duracion": "24:41:00", "miniatura": "../assets/miniatures/c++/miniature_cplus-3.jpg", "link": "https://www.youtube.com/watch?v=APN8aCyPvww&list=PLCTD_CpMeEKTofxs7iottRxJ5YPM7BOcc&ab_channel=ProgramadorNovato"},
-            { "titulo": "Programación con C++ para videojuegos", "lenguaje": "Espanol", "autor": "Mi cuadernbo de Videojuegos", "duracion": "04:10:20", "miniatura": "../assets/miniatures/c++/miniature_cplus-4.jpg", "link": "https://www.youtube.com/watch?v=ves0_JB-fEA&list=PLcLC2I7iifCk3ifpp5bZOl2O28wPSJq47&ab_channel=MiCuadernodeVideojuegos"}
+            { "titulo": "Curso C#", "lenguaje": "Espanol", "autor": "PildorasInformaticas", "duracion": "16:39:13", "miniatura": "../assets/miniatures/csharp/miniature_csharp-1.jpg", "link": "https://www.youtube.com/watch?v=6EBNIgkrU74&list=PLU8oAlHdN5BmpIQGDSHo5e1r4ZYWQ8m4B&ab_channel=pildorasinformaticas"},
+            { "titulo": "Curso Completo de C# para Principiantes (2021)", "autor": "ATL Academy", "lenguaje": "Espanol", "duracion": "06:29:54", "miniatura": "../assets/miniatures/csharp/miniature_csharp-2.jpg", "link": "https://www.youtube.com/watch?v=TqiysLEBZo4&t=8s&ab_channel=ATLAcademy%28byLucasMoy%29"},
+            { "titulo": "C# Desde Cero: Primeros Pasos", "autor": "MoureDev", "lenguaje": "Espanol", "duracion": "01:21:39", "miniatura": "../assets/miniatures/csharp/miniature_csharp-3.jpg", "link": "https://www.youtube.com/watch?v=L-f8u0hwi4Y&ab_channel=MoureDevbyBraisMoure"},
+            { "titulo": "Visual C Sharp C# Nivel Básico Curso Completo", "lenguaje": "Espanol", "autor": "DeVito", "duracion": "05:08:09", "miniatura": "../assets/miniatures/csharp/miniature_csharp-4.jpg", "link": "https://www.youtube.com/watch?v=4ktdC10JCrw&ab_channel=DeVito"}
         ]
     },
     {
         "nombre": "PHYTON",
         "videos": [
-            { "titulo": "JAVASCRIPT Desde Cero: Primeros Pasos en una hora", "lenguaje": "Espanol", "autor": "MoureDev", "duracion": "01:08:39", "miniatura": "../assets/miniatures/javascript/miniature-js-1.jpg", "link": "https://www.youtube.com/watch?v=6cnFl9aHD5Y&ab_channel=MoureDevbyBraisMoure"},
-            { "titulo": "Aprende JavaScript - Curso Completo desde Cero", "lenguaje": "Espanol", "autor": "FreeCodeCamp", "duracion": "09:15:20", "miniatura": "../assets/miniatures/javascript/miniature-js-2.jpg", "link": "https://www.youtube.com/watch?v=ivdTnPl1ND0&ab_channel=freeCodeCampEspa%C3%B1ol"},
-            { "titulo": "Curso de JAVASCRIPT desde CERO (Completo) - Nivel Master", "lenguaje": "Espanol", "autor": "Soy Dalto", "duracion": "09:23:18", "miniatura": "../assets/miniatures/javascript/miniature-js-3.jpg", "link": "https://www.youtube.com/watch?v=EbMi1Qj4rVE&ab_channel=SoyDalto"},
-            { "titulo": "Aprende javascript! con 5 proyectos incluidos", "lenguaje": "Espanol", "autor": "Codigo 369", "duracion": "04:43:32", "miniatura": "../assets/miniatures/javascript/miniature-js-4.jpg", "link": "https://www.youtube.com/watch?v=nQobb4pcU78&ab_channel=Codigo369"}
-        ]
-    },
-    {
-        "nombre": "R",
-        "videos": [
-            { "titulo": "Aprende HTML ahora! curso completo GRATIS desde cero", "lenguaje": "Espanol", "autor": "HolaMundo", "duracion": "01:33:54", "miniatura": "../assets/miniatures/html/miniature-html-1.jpg", "link": "https://www.youtube.com/watch?v=MJkdaVFHrto&ab_channel=HolaMundo"},
-            { "titulo": "Aprende HTML y CSS - Curso Desde Cero", "lenguaje": "Espanol", "autor": "FreeCodeCamp", "duracion": "05:15:39", "miniatura": "../assets/miniatures/html/miniature-html-2.jpg", "link": "https://www.youtube.com/watch?v=XqFR2lqBYPs&ab_channel=freeCodeCampEspa%C3%B1ol"},
-            { "titulo": "Curso de HTML5 desde CERO (Completo)", "lenguaje": "Espanol", "autor": "Soy Dalto", "duracion": "02:24:34", "miniatura": "../assets/miniatures/html/miniature-html-3.jpg", "link": "https://www.youtube.com/watch?v=kN1XP-Bef7w&ab_channel=SoyDalto"},
-            { "titulo": "Curso HTML para Principiantes", "lenguaje": "Espanol", "autor": "Fazt", "duracion": "01:17:34", "miniatura": "../assets/miniatures/html/miniature-html-4.jpg", "link": "https://www.youtube.com/watch?v=rbuYtrNUxg4&ab_channel=Fazt"}
+            { "titulo": "Curso de PYTHON desde CERO (Completo)", "lenguaje": "Espanol", "autor": "Soy Dalto", "duracion": "08:06:29", "miniatura": "../assets/miniatures/python/miniature_python-1.jpg", "link": "https://www.youtube.com/watch?v=nKPbfIU442g&ab_channel=SoyDalto"},
+            { "titulo": "Curso de PYTHON desde CERO para PRINCIPIANTES", "lenguaje": "Espanol", "autor": "MoureDev", "duracion": "10:07:34", "miniatura": "../assets/miniatures/python/miniature_python-2.jpg", "link": "https://www.youtube.com/watch?v=Kp4Mvapo5kc&ab_channel=MoureDevbyBraisMoure"},
+            { "titulo": "Aprende Python ahora! curso completo e intensivo desde cero", "lenguaje": "Espanol", "autor": "HolaMundo", "duracion": "05:05:49", "miniatura": "../assets/miniatures/python/miniature_python-3.jpg", "link": "https://www.youtube.com/watch?v=tQZy0U8s9LY&ab_channel=HolaMundo"},
+            { "titulo": "Aprende Python - Curso de Python desde Cero", "lenguaje": "Espanol", "autor": "FreeCodeCamp", "duracion": "04:36:42", "miniatura": "../assets/miniatures/python/miniature_python-4.jpg", "link": "https://www.youtube.com/watch?v=DLikpfc64cA&ab_channel=freeCodeCampEspa%C3%B1ol"}
         ]
     },
     {
         "nombre": "PHP",
         "videos": [
-            { "titulo": "CREA una PAGINA WEB desde CERO (HTML y CSS) CURSO COMPLETO", "lenguaje": "Espanol", "autor": "AlexCG Design", "duracion": "02:15:50", "miniatura": "../assets/miniatures/css/miniature-css-1.jpg", "link": "https://www.youtube.com/watch?v=C73S3oSnZLE&ab_channel=AlexCGDesign"},
-            { "titulo": "APRENDE CSS desde CERO (tutorial completo)", "lenguaje": "Espanol", "autor": "AlexCG Design", "duracion": "09:25:25", "miniatura": "../assets/miniatures/css/miniature-css-2.jpg", "link": "https://www.youtube.com/watch?v=WfDqFArJnYA&ab_channel=AlexCGDesign"},
-            { "titulo": "Aprende CSS ahora! curso completo GRATIS desde cero", "lenguaje": "Espanol", "autor": "HolaMundo", "duracion": "02:05:27", "miniatura": "../assets/miniatures/css/miniature-css-3.jpg", "link": "https://www.youtube.com/watch?v=wZniZEbPAzk&ab_channel=HolaMundo"},
-            { "titulo": "Curso de CSS desde CERO (Completo)", "lenguaje": "Espanol", "autor": "Soy Dalto", "duracion": "09:46:54", "miniatura": "../assets/miniatures/css/miniature-css-4.jpg", "link": "https://www.youtube.com/watch?v=OWKXEJN67FE&ab_channel=SoyDalto"}
+            { "titulo": "CURSO de php desde cero", "lenguaje": "Espanol", "autor": "DevEloteca", "duracion": "07:29:16", "miniatura": "../assets/miniatures/php/miniature_php-1.jpg", "link": "https://www.youtube.com/watch?v=nCB1gEkRZ1g&ab_channel=Develoteca-OscarJ.UhP%C3%A9rez"},
+            { "titulo": "PHP Desde Cero: Primeros Pasos", "lenguaje": "Espanol", "autor": "MoureDev", "duracion": "01:12:07", "miniatura": "../assets/miniatures/php/miniature_php-2.jpg", "link": "https://www.youtube.com/watch?v=nPCJAx5c1uE&ab_channel=MoureDevbyBraisMoure"},
+            { "titulo": "10 PROYECTOS COMPLETOS CON PHP", "lenguaje": "Espanol", "autor": "VidaMRR", "duracion": "07:47:12", "miniatura": "../assets/miniatures/php/miniature_php-3.jpg", "link": "https://www.youtube.com/watch?v=w8CZFQZV_8Y&ab_channel=VidaMRR-Programacionweb"},
+            { "titulo": "CURSO de PHP desde cero COMPLETO", "lenguaje": "Espanol", "autor": "DirectoAlGrano", "duracion": "02:18:58", "miniatura": "../assets/miniatures/php/miniature_php-4.jpg", "link": "https://www.youtube.com/watch?v=8UiSEskuOfE&ab_channel=DirectoAlGrano"}
         ]
     }
     ]
