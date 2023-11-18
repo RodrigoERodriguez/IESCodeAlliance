@@ -194,11 +194,6 @@ main{
 
 /* Index.html */
 /* Container-primero */
-.main__nuevo-cliente{
-    height: 400px;
-    padding: 50px;
-}
-
 :is(.main__nuevo-cliente-h1 , .main__nuevo-cliente-h2 , .main__nuevo-cliente-h3){
     color: var(--white);
     font-weight: bold;
@@ -640,7 +635,7 @@ main{
 
 /* Menu Cursos */
 /* Propiedades Lista desplegable */
-.cursos__enguajes-filtro {
+.cursos__lenguajes-filtro {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -768,7 +763,7 @@ main{
     transform: scale(1.1);
 }
 
-/* Propiedades Texto Cursos */
+/* Propiedades Texto Novedades */
 .novedades__titulo-categoria{
     padding: 10px;
     display: inline;
@@ -806,84 +801,373 @@ main{
 }
 
 /* Querys */
-@media (min-width:1200px){
-/*Comienzo NavBar*/
-.min__header-logo {
-    font-size: 35px;
-    margin-left: 20px;
-}
-/*Fin NavBar*/
+@media (max-width:922px){
+    /* NavBar fijo para App */
+    .app__nav-links a{
+        display: inline-block;
+        margin-left: -340px;
+    }
 
-.ccdn__header-logo{
-    font-size: 20px;
+    /* Index.html */
+    /* Container-primero */
+    .main__nuevo-cliente-h1{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .main__nuevo-cliente-h2{
+        font-size: 20px;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    .main__nuevo-cliente-h3{
+        font-size: 15px;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    /* Container-segundo */
+    .main__elementos-publicidad {
+        flex-direction: column-reverse;
+    }
+    
+    .main__textos-publicidad{
+        text-align: center;
+        align-items: center;
+        margin-left: -80px;
+    }
+
+    .main__textos-publicidad-h2{
+        font-size: 40px;
+    }
+    
+    .main__textos-publicidad-h3{
+        font-size: 20px;
+    }
+    
+    .main__imagen-publicidad img{
+        align-items: center;
+        height: 300px;
+        width: auto;
+    }
+
+    /* Container-tercero */
+    .main__preguntas h2{
+        text-align: center;
+    }
+
+    /* Paginas */
+    /* Inicio-sesion.html */
+    .log__contenedor-inicio-de-sesion{
+        margin-top: 20px;
+    }
+
+    /* Nuevo-usuario.html */
+    .register__contenedor-datos-usuario{
+        margin-top: -110px;
+    }
+
+    /* Menu Inicio */
+    /* Propiedades Top3 */
+    .app__card-top3{
+        display: flex;
+        align-items: center;
+        height: 200px;
+        width: 200px;
+        margin-top: 200px;
+        margin-left: -440px;
+        margin-bottom: 90px;
+    }
+
+    .app__numero-top3 img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .app__numero-top3{
+        margin-right: -90px;
+    }
+
+    .app__miniatura-top3 img{
+        height: 200px;
+        width: 200px;
+    }
+
+    /* Propiedades Capitulos Destacados */
+    .app__capitulos-destacados{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .app__texto-capitulos-destacados{
+        text-align: left;
+    }
+
+    .app__card-capitulos-destacados{
+        height: 200px;
+        width: 200px;
+        margin-top: 150px;
+        margin-left: 40px;
+    }
+
+    .app__card-capitulos-destacados img{
+        height: 170px;
+        width: auto;
+        margin-bottom: 40px;
+    }
+
+    /* Propiedades de Lenguajes disponibles */
+    .app__lenguajes{  
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .app__texto-lenguajes{
+        text-align: left;
+    }
+
+    .app__card-lenguajes{
+        height: 200px;
+        width: 200px;
+        margin-top: 150px;
+        margin-left: 100px;
+    }
+
+    .app__card-lenguajes img{
+        height: 100px;
+        width: auto;
+        margin-bottom: 40px;
+    }
+
+    /* Propiedades Visuales Cursos */
+    .cursos__video-categoria img{
+        height: 200px;
+        width: auto;
+    }
+
+    /* Propiedades Texto Cursos */
+    .cursos__texto-titulo{
+        font-size: 25px;
+    }
+
+    .cursos__texto-autor{
+        font-size: 20px;
+    }
+
+    .cursos__texto-duracion{
+        font-size: 20px;
+    }
+
+    /* Propiedades Visuales Novedades */
+    .novedades__video-categoria img{
+        height: 200px;
+        width: auto;
+    }
+
+    /* Propiedades Texto Novedades */
+    .novedades__texto-titulo{
+        font-size: 25px;
+    }
+
+    .novedades__texto-autor{
+        font-size: 20px;
+    }
+
+    .novedades__texto-duracion{
+        font-size: 20px;
+    }
 }
 
-.ccdn__nav-links ul {
-    list-style-type: none;
-    display: flex;
-    padding: 0;  
+@media (max-width:678px){
+    /* Menu Inicio */
+    /* Propiedades Top3 */
+    .app__top-3{
+        grid-template-columns: repeat(1, 2fr);
+    }
+    
+    .app__card-top3{
+        margin-top: -200px;
+        margin-left: 50px;
+        height: 300px;
+        width: 300px;
+    }
+
+    .app__numero-top3 img{
+        height: 300px;
+        width: 300px;
+    }
+
+    .app__numero-top3{
+        margin-right: -130px;
+    }
+
+    .app__miniatura-top3 img{
+        height: 300px;
+        width: 300px;
+    }
+
+    /* Propiedades Capitulos Destacados */
+    .app__card-capitulos-destacados{
+        height: 200px;
+        width: 200px;
+        margin-top: 150px;
+        margin-left: 15px;
+    }
+
+    .app__card-capitulos-destacados img{
+        height: 150px;
+        width: auto;
+    }
+
+    /* Propiedades de Lenguajes disponibles */
+    .app__lenguajes{  
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .app__card-lenguajes{
+        margin-left: 120px;
+    }
+
+    /* Propiedades Visuales Cursos */
+    .cursos__contenedor-videos-categoria{
+        grid-template-columns: repeat(1, 2fr);
+    }
+
+    .cursos__video-categoria img{
+        height: 300px;
+        width: auto;
+    }
+
+    /* Propiedades Texto Cursos */
+    .cursos__texto-titulo{
+        font-size: 30px;
+    }
+
+    .cursos__texto-duracion{
+        font-size: 20px;
+        margin-bottom: 80px;
+    }
+
+    /* Propiedades Visuales Novedades */
+    .novedades__contenedor-videos-categoria{
+        grid-template-columns: repeat(1, 2fr);
+    }
+
+    .novedades__video-categoria img{
+        height: 300px;
+        width: auto;
+    }
+
+    /* Propiedades Texto Novedades */
+    .novedades__texto-titulo{
+        font-size: 30px;
+    }
+
+    .novedades__texto-duracion{
+        font-size: 20px;
+        margin-bottom: 80px;
+    }
 }
 
-.ccdn__nav-links{
-    margin-left: -300px;
-}
+@media (max-width:576px){
+    /* Footer fijo para TODOS */
+    .footer__footer{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+    }
 
-.ccdn__nav-links a{
-    font-size: 20px;
-    margin-right: -10px;
-}
+    /* Index.html */
+    /* Container-primero */
+    .main__nuevo-cliente-h1{
+        font-size: 20px;
+    }
 
-.ccdn__buscador{
-    height: 50px;
-    width: 180px;
-    margin-left: -370px;
-}
+    .main__nuevo-correo{
+        height: 50px;
+        width: 300px;
+    }
+    /* Container-segundo */
+    .main__textos-publicidad{
+        text-align: center;
+        align-items: center;
+        margin-left: -80px;
+    }
 
-/*Comienzo Botones*/
-.min__header-boton {
-    width: 150px;
-    font-size: 20px;
-    margin-right: 30px;
-}
+    .main__textos-publicidad-h2{
+        font-size: 30px;
+    }
+    
+    .main__textos-publicidad-h3{
+        font-size: 15px;
+    }
 
-.min__boton-comenzar {
-    width: 200px;
-    font-size: 20px;
-}
-/*Fin Botones*/
+    /* Container-tercero */
+    .main__preguntas{
+        margin-left: -50px;
+        border-bottom: 200px;
+    }
+    
+    .footer__footer-redes i{
+        font-size: 55px;
+    }
+    /* Propiedades Capitulos Destacados */
+    .app__capitulos-destacados{
+        grid-template-columns: repeat(1, 2fr);
+    }
 
-/*Comienzo Footer*/
-.min__footer h2 {
-    font-size: 25px;
-    text-align: left;
-}
+    .app__card-capitulos-destacados{
+        margin-left: 70px;
+    }
 
-.min__footer p {
-    font-size: 15px;
-}
+    .app__card-capitulos-destacados img{
+        height: 250px;
+        width: auto;
+    }
 
-.min__footer-redes i {
-    font-size: 30px;
-    width: auto;
-}
-/*Fin Footer*/
+    /* Propiedades Visuales Cursos */
+    .cursos__contenedor-videos-categoria{
+        grid-template-columns: repeat(1, 2fr);
+    }
 
-/*Comienzo elementos section container-segundo*/
-.main__textos-publicidad-h2 {
-    font-size: 50px;
-    margin-left: -5px;
-}
+    .cursos__video-categoria img{
+        height: 300px;
+        width: auto;
+    }
 
-.main__textos-publicidad-h3 {
-    font-size: 20px;
-    margin-left: -5px;
-}
+    /* Propiedades de Lenguajes disponibles */
+    .app__lenguajes{  
+        grid-template-columns: repeat(1, 2fr);
+    }
+    
+    .app__texto-lenguajes{
+        margin-top: 200px;
+    }
+    
+    .app__card-lenguajes{
+        margin-left: 250px;
+        margin-top: 100px;
+    }
 
-.main__imagen-publicidad img {
-    margin-top: 30px;
-    margin-left: 5px;
-    height: 290px;
-    width: auto;
-}
-/*Fin elementos section container-segundo*/
+    /* Propiedades Visuales Cursos */
+    .cursos__contenedor-videos-categoria{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 60px;
+    }
+    
+    .cursos__video-categoria img{
+        height: 200px;
+        width: auto;
+    }
+
+    /* Propiedades Visuales Novedades */
+    .novedades__contenedor-videos-categoria{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 60px;
+    }
+    
+    .novedades__video-categoria img{
+        height: 200px;
+        width: auto;
+    }
 }
