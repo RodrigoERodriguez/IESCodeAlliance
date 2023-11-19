@@ -1171,3 +1171,181 @@ main{
         width: auto;
     }
 }
+
+@media (min-width:320px) and (max-width:576PX){
+    /* Botones */
+    .main__boton-comenzar{
+        font-size: 15px;
+        height: 50px;
+        width: 120px;
+    }
+
+    .main__inicio-sesion{
+        font-size: 15px;
+        height: 50px;
+        width: 130px;
+    }
+
+    /* Index.html */
+    /* Container-primero */
+    .main__nuevo-cliente-h1{
+        font-size: 15px;
+    }
+
+    .main__nuevo-cliente-h2{
+        font-size: 15px;
+    }
+
+    .main__nuevo-cliente-h3{
+        font-size: 15px;
+    }
+
+    .main__nuevo-correo{
+        height: 50px;
+        width: 200px;
+    }
+
+    /* Container-segundo */
+    .main__textos-publicidad-h2{
+        font-size: 30px;
+    }
+    
+    .main__textos-publicidad-h3{
+        font-size: 20px;
+    }
+
+    .main__imagen-publicidad img{
+        align-items: center;
+        height: 200px;
+        width: auto;
+    }
+
+    /* Container-tercero */
+    .main__preguntas{
+        margin-top: 190px;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 300px;
+        margin-left: 25px;
+    }
+    
+    .main__questions {
+        height: 60px;
+        width: 300px;
+    }
+    
+    .main__content-questions{
+        height: 60px;
+        width: 300px;
+    }
+
+    .footer__footer-redes i{
+        font-size: 55px;
+    }
+
+    /* Menu Inicio */
+    /* Propiedades Top3 */
+    .app__card-top3{
+        margin-top: -200px;
+        margin-left: 20px;
+        height: 200px;
+        width: 200px;
+    }
+
+    .app__numero-top3 img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .app__numero-top3{
+        margin-right: -90px;
+    }
+
+    .app__miniatura-top3 img{
+        height: 200px;
+        width: 200px;
+    }
+
+    /* Propiedades Capitulos Destacados */
+    .app__card-capitulos-destacados{
+        height: 200px;
+        width: 200px;
+        margin-top: 90px;
+        margin-left: 40px;
+    }
+
+    .app__card-capitulos-destacados img{
+        height: 200px;
+        width: auto;
+    }
+
+    /* Propiedades de Lenguajes disponibles */
+    .app__lenguajes{  
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .app__card-lenguajes{
+        height: 100px;
+        width: 100px;
+        margin-bottom: 50px;
+    }
+
+    .app__card-lenguajes img{
+        margin-left: -100px;
+    }
+    /* Propiedades Visuales Cursos */
+    .cursos__contenedor-videos-categoria{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .cursos__video-categoria img{
+        margin-left: -80px;
+        height: 200px;
+        width: auto;
+    }
+
+    /* Propiedades Visuales Novedades */
+    .novedades__contenedor-videos-categoria{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .novedades__video-categoria img{
+        margin-left: -80px;
+        height: 200px;
+        width: auto;
+    }
+
+    /* Propiedades Texto Cursos */
+    .cursos__texto-titulo{
+        font-size: 30px;
+        margin-left: -100px;
+    }
+
+    .cursos__texto-autor{
+        margin-left: -100px;
+    }
+
+    .cursos__texto-duracion{
+        font-size: 20px;
+        margin-bottom: 80px;
+        margin-left: -100px;
+    }
+
+    /* Propiedades Texto Novedades */
+    .novedades__texto-titulo{
+        font-size: 30px;
+        margin-left: -100px;
+    }
+
+    .novedades__texto-autor{
+        margin-left: -100px;
+    }
+
+    .novedades__texto-duracion{
+        font-size: 20px;
+        margin-bottom: 80px;
+        margin-left: -100px;
+    }    
+}
