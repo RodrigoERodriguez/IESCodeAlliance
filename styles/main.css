@@ -801,7 +801,7 @@ main{
 }
 
 /* Querys */
-@media (max-width:922px){
+@media (max-width:922px) {
     /* NavBar fijo para App */
     .app__nav-links a{
         display: inline-block;
