@@ -29,7 +29,7 @@ Hemos empleado las siguientes tecnologías para construir la Plataforma Educativ
 ### 1. Clonar el Repositorio
 Para obtener una copia local de este proyecto, clona este repositorio utilizando el siguiente comando:
 
-git clone https://github.com/TuUsuario/IES21-PlataformaEducativa.git
+git clone https://github.com/RodrigoERodriguez/IESCodeAlliance.git
 
 ## Diseño Visual
 Durante el proceso de diseño, nos enfocamos en crear una estética que refleje la temática de la página. Utilizamos colores, tipografía y elementos visuales coherentes para garantizar una experiencia de usuario atractiva y cohesiva.
