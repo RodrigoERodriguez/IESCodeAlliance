@@ -1,29 +1,8 @@
-//---------------------------------------------------------------//
-
 let cursos = [];
 
-//---------------------------------------------------------------//
-
-fetch("../data/cursos.json")
-.then(response => response.json())
-.then(data => {
-    cursos = data;
-    cargarCursos(cursos);
-});
-
-//---------------------------------------------------------------//
-
-//- ELEMENTOS DEL DOM -//
-
-const contenedorCursos = document.querySelector("#cursos__grupo-contenedor");
-const eleccionLenguaje = document.getElementById("cursos__lenguajes-filtro");
-const botonFiltrado = document.getElementById("cursos__boton-filtrar");
-
-
-//---------------------------------------------------------------//
-
-
+// Función para cargar los cursos
 function cargarCursos(cursos) {
+    const contenedorCursos = document.querySelector("#cursos__grupo-contenedor");
     contenedorCursos.innerHTML = "";
 
     cursos.curso.forEach(curso => {
@@ -48,25 +27,31 @@ function cargarCursos(cursos) {
     });
 }
 
-document.addEventListener("change", function () {
-
-    botonFiltrado.addEventListener('click', function (event) {
-        event.preventDefault();
-
-        const categoriaSeleccionada = eleccionLenguaje.elements['categoria'].value;
-
-        const cursosFiltrados = filtrarCursos(categoriaSeleccionada, cursos);
-
-        cargarCursos(cursosFiltrados);
-    });
-
-    //---------------------------------------------------------------//
-
-    function filtrarCursos(categoria, cursos) {
-        if (categoria === '0') {
-            return cursos;
-        } else {
-            return cursos.curso.filter(curso => curso.nombre.toString() === categoria);
-        }
+// Función para filtrar cursos
+function filtrarCursos(categoria, cursos) {
+    if (categoria === 'Todos') {
+        return cursos;
+    } else {
+        return { curso: cursos.curso.filter(curso => curso.nombre === categoria) };
     }
+}
+
+// Evento de clic en el botón de filtrar
+document.getElementById("cursos__boton-filtrar").addEventListener('click', function (event) {
+    event.preventDefault();
+
+    const eleccionLenguaje = document.getElementById("id-categoria");
+    const categoriaSeleccionada = eleccionLenguaje.value;
+
+    const cursosFiltrados = filtrarCursos(categoriaSeleccionada, cursos);
+
+    cargarCursos(cursosFiltrados);
 });
+
+// Fetch para obtener los cursos
+fetch("../data/cursos.json")
+    .then(response => response.json())
+    .then(data => {
+        cursos = data;
+        cargarCursos(cursos);
+    });
