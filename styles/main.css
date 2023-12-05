@@ -73,7 +73,8 @@ main{
 /* Footer fijo para TODOS */
 .footer__footer{
     background: var(--gray) ;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     padding: 20px;
 }
@@ -91,10 +92,9 @@ main{
     color: var(--white);
 }
 
-.footer__footer-contenedor{
-    flex: 1;
+.footer__footer-contenedor, .footer__footer-redes{
     margin-right: 20px;
-    margin-left: 20px;
+    margin-left: 200px;
 }
 
 .footer__footer-redes i{
@@ -105,6 +105,7 @@ main{
     cursor: pointer;
     padding: 0 10px;
     margin-top: 50px;
+    margin-left: 20px;
 }
 
 .footer__footer-redes i:hover{
@@ -530,36 +531,36 @@ main{
 .app__top-3{
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(4, 2fr);
-    grid-gap: 300px;
+    grid-template-columns: repeat(3, 2fr);
+    margin-left: 100px;
 }
 
 .app__card-top3{
     display: flex;
     align-items: center;
-    height: 400px;
-    width: 400px;
-    margin-top: 200px;
-    margin-left: -500px;
+    height: 300px;
+    width: 300px;
+    margin-top: 60px;
     margin-bottom: 90px;
 }
 
 .app__numero-top3 img{
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
 }
 
 .app__numero-top3{
-    margin-right: -170px;
+    margin-right: -120px;
+    margin-left: -10px;
 }
 
 .app__miniatura-top3 img{
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
 }
 
 .app__titulo-top3{
-    margin-top: 40px;
+    padding: 20px;
     margin-left: 20px;
     text-align: left;
     font-size: 35px;
@@ -571,13 +572,12 @@ main{
 .app__capitulos-destacados{
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(7, 2fr);
-    grid-gap: 100px;
+    grid-template-columns: repeat(6, 2fr);
+    grid-gap: 35px;
 }
 
 .app__texto-capitulos-destacados{
-    margin-top: 40px;
-    margin-left: 20px;
+    padding: 20px;
     text-align: left;
     font-size: 35px;
     font-weight: bold;
@@ -587,8 +587,7 @@ main{
 .app__card-capitulos-destacados{
     height: 300px;
     width: 300px;
-    margin-top: 150px;
-    margin-left: -200px;
+    margin-left: 20px;
 }
 
 .app__card-capitulos-destacados img{
@@ -606,12 +605,11 @@ main{
 .app__lenguajes{  
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(7, 2fr);
+    grid-template-columns: repeat(6, 2fr);
 }
 
 .app__texto-lenguajes{
-    margin-top: 40px;
-    margin-left: 20px;
+    padding: 20px;
     text-align: left;
     font-size: 35px;
     font-weight: bold;
@@ -621,7 +619,8 @@ main{
 .app__card-lenguajes{
     height: 200px;
     width: 200px;
-    margin-top: 200px;
+    margin-top: 50px;
+    margin-left: 150px;
 }
 
 .app__card-lenguajes img{
@@ -635,6 +634,10 @@ main{
 
 /* Menu Cursos */
 /* Propiedades Lista desplegable */
+.cursos__contenedor-filtro{
+    padding: 30px;
+}
+
 .cursos__lenguajes-filtro {
     display: flex;
     flex-direction: row;
@@ -685,14 +688,14 @@ main{
     padding: 0 9%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(4, 2fr);
     gap: 15px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
 .cursos__video-categoria img{
-    height: 400px;
+    height: 200px;
     width: auto;
 }
 
@@ -705,7 +708,7 @@ main{
     padding: 10px;
     display: inline;
     color: var(--white);
-    font-weight: 300;
+    font-weight: 400px;
     font-size: 25px;
     font-weight: bold;
     text-align: left;
@@ -716,7 +719,7 @@ main{
 .cursos__texto-titulo{
     margin-top: 30px;
     text-align: left;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bold;
     color: var(--white);
 }
@@ -724,7 +727,7 @@ main{
 .cursos__texto-autor{
     margin-top: 10px;
     text-align: left;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     color: var(--white);
 }
@@ -732,7 +735,7 @@ main{
 .cursos__texto-duracion{
     margin-top: 10px;
     text-align: left;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     color: var(--white);
 }
@@ -748,7 +751,7 @@ main{
     padding: 0 9%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(4, 2fr);
     gap: 15px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -800,8 +803,41 @@ main{
     color: var(--white);
 }
 
+.disabled{
+    display: none;
+}
+
 /* Querys */
 @media (max-width:922px) {
+    .footer__footer{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+
+    .footer__footer h2{
+        font-size: 25px;
+    }
+    
+    .footer__footer p{
+        font-size: 20px;
+    }
+    
+    .footer__footer-redes{
+        margin-left: 20px;
+    }
+
+    .footer__footer-contenedor{
+        margin-left: 50px;
+    }
+
+    .app__elementos-visuales{
+        display: none;
+    }
+
+    .disabled{
+        display: block;
+    }
+
     /* NavBar fijo para App */
     .app__nav-links a{
         display: inline-block;
@@ -875,8 +911,7 @@ main{
         align-items: center;
         height: 200px;
         width: 200px;
-        margin-top: 200px;
-        margin-left: -440px;
+        margin-left: -80px;
         margin-bottom: 90px;
     }
 
@@ -906,8 +941,7 @@ main{
     .app__card-capitulos-destacados{
         height: 200px;
         width: 200px;
-        margin-top: 150px;
-        margin-left: 40px;
+        margin-left: 90px;
     }
 
     .app__card-capitulos-destacados img{
@@ -928,7 +962,6 @@ main{
     .app__card-lenguajes{
         height: 200px;
         width: 200px;
-        margin-top: 150px;
         margin-left: 100px;
     }
 
@@ -939,6 +972,10 @@ main{
     }
 
     /* Propiedades Visuales Cursos */
+    .cursos__contenedor-videos-categoria{
+        grid-template-columns: repeat(2, 2fr)
+    }
+    
     .cursos__video-categoria img{
         height: 200px;
         width: auto;
@@ -958,6 +995,10 @@ main{
     }
 
     /* Propiedades Visuales Novedades */
+    .novedades__contenedor-videos-categoria{
+        grid-template-columns: repeat(2, 2fr)
+    }
+
     .novedades__video-categoria img{
         height: 200px;
         width: auto;
@@ -978,6 +1019,11 @@ main{
 }
 
 @media (max-width:678px){
+    /* Footer fijo para TODOS */
+    .footer__footer{
+        grid-template-columns: repeat(1, 2fr);
+    }
+    
     /* Menu Inicio */
     /* Propiedades Top3 */
     .app__top-3{
@@ -985,8 +1031,7 @@ main{
     }
     
     .app__card-top3{
-        margin-top: -200px;
-        margin-left: 50px;
+        margin-left: -40px;
         height: 300px;
         width: 300px;
     }
@@ -1009,8 +1054,7 @@ main{
     .app__card-capitulos-destacados{
         height: 200px;
         width: 200px;
-        margin-top: 150px;
-        margin-left: 15px;
+        margin-left: 45px;
     }
 
     .app__card-capitulos-destacados img{
@@ -1069,12 +1113,6 @@ main{
 }
 
 @media (max-width:576px){
-    /* Footer fijo para TODOS */
-    .footer__footer{
-        display: grid;
-        grid-template-columns: repeat(1, 2fr);
-    }
-
     /* Index.html */
     /* Container-primero */
     .main__nuevo-cliente-h1{
@@ -1112,20 +1150,55 @@ main{
     /* Propiedades Capitulos Destacados */
     .app__capitulos-destacados{
         grid-template-columns: repeat(1, 2fr);
-    }
-
-    .app__card-capitulos-destacados{
         margin-left: 70px;
     }
 
-    .app__card-capitulos-destacados img{
-        height: 250px;
-        width: auto;
+    /* Propiedades de Lenguajes disponibles */
+    .app__lenguajes{  
+        grid-template-columns: repeat(1, 2fr);
+        margin-left: 200px;
+    }
+    
+    .app__texto-lenguajes{
+        margin-top: 100px;
+    }
+
+    /* Menu Inicio */
+    /* Propiedades Top3 */
+    .app__top-3{
+        margin-left: 100px;
+        margin-top: 250px;
+    }
+    
+    .app__card-top3{
+        margin-bottom: 300px;
+    }
+    
+    .app__numero-top3 img{
+        height: 400px;
+        width: 400px;
+    }
+    
+    .app__numero-top3{
+        margin-right: -120px;
+        margin-left: -10px;
+    }
+    
+    .app__miniatura-top3 img{
+        height: 400px;
+        width: 400px;
+    }
+
+    /* Propiedades Visuales Cursos */
+    .app__texto-capitulos-destacados{
+        margin-top: -200px;
+        margin-bottom: -90px;
     }
 
     /* Propiedades Visuales Cursos */
     .cursos__contenedor-videos-categoria{
-        grid-template-columns: repeat(1, 2fr);
+        grid-template-columns: repeat(1, 2fr); 
+        margin-left: 100px;
     }
 
     .cursos__video-categoria img{
@@ -1133,39 +1206,13 @@ main{
         width: auto;
     }
 
-    /* Propiedades de Lenguajes disponibles */
-    .app__lenguajes{  
-        grid-template-columns: repeat(1, 2fr);
-    }
-    
-    .app__texto-lenguajes{
-        margin-top: 200px;
-    }
-    
-    .app__card-lenguajes{
-        margin-left: 250px;
-        margin-top: 100px;
-    }
-
-    /* Propiedades Visuales Cursos */
-    .cursos__contenedor-videos-categoria{
-        margin-top: 30px;
-        margin-bottom: 30px;
-        margin-left: 60px;
-    }
-    
-    .cursos__video-categoria img{
-        height: 200px;
-        width: auto;
-    }
 
     /* Propiedades Visuales Novedades */
     .novedades__contenedor-videos-categoria{
-        margin-top: 30px;
-        margin-bottom: 30px;
-        margin-left: 60px;
+        grid-template-columns: repeat(1, 2fr); 
+        margin-left: 100px;
     }
-    
+
     .novedades__video-categoria img{
         height: 200px;
         width: auto;
@@ -1320,32 +1367,32 @@ main{
     /* Propiedades Texto Cursos */
     .cursos__texto-titulo{
         font-size: 30px;
-        margin-left: -100px;
+        margin-left: -90px;
     }
 
     .cursos__texto-autor{
-        margin-left: -100px;
+        margin-left: -90px;
     }
 
     .cursos__texto-duracion{
         font-size: 20px;
         margin-bottom: 80px;
-        margin-left: -100px;
+        margin-left: -90px;
     }
 
     /* Propiedades Texto Novedades */
     .novedades__texto-titulo{
         font-size: 30px;
-        margin-left: -100px;
+        margin-left: -90px;
     }
 
     .novedades__texto-autor{
-        margin-left: -100px;
+        margin-left: -90px;
     }
 
     .novedades__texto-duracion{
         font-size: 20px;
         margin-bottom: 80px;
-        margin-left: -100px;
+        margin-left: -90px;
     }    
 }
