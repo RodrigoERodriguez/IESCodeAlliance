@@ -42,7 +42,12 @@
             <div class="app__elementos-visuales">
                 <input class="form-control me-2 app__buscador" type="text" placeholder="Buscar">
                 <button class="btn btn-primary app__boton-busqueda" type="button">Search</button>
-                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="app__dropdown-cerrar-sesion">
+                <i class="fas fa-user dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"></i>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <button class="app__dropdown-boton-cerrar-sesion" id="logout">Logout</button>
+                </div>
             </div>
             </div>
         </nav>
@@ -76,6 +81,8 @@
     </footer> 
 
     <!-- Inicio SCRIPT -->
+    <script src="../js/main.js"
+    ></script>
     <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"

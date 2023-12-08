@@ -1,6 +1,18 @@
+//---------------------------------------------------------------//
+
 let cursos = [];
 
-// Función para cargar los cursos
+//---------------------------------------------------------------//
+
+fetch("../data/cursos.json")
+    .then(response => response.json())
+    .then(data => {
+        cursos = data;
+        cargarCursos(cursos);
+    });
+
+//---------------------------------------------------------------//
+    
 function cargarCursos(cursos) {
     const contenedorCursos = document.querySelector("#cursos__grupo-contenedor");
     contenedorCursos.innerHTML = "";
@@ -27,7 +39,8 @@ function cargarCursos(cursos) {
     });
 }
 
-// Función para filtrar cursos
+//---------------------------------------------------------------//
+
 function filtrarCursos(categoria, cursos) {
     if (categoria === 'Todos') {
         return cursos;
@@ -36,7 +49,8 @@ function filtrarCursos(categoria, cursos) {
     }
 }
 
-// Evento de clic en el botón de filtrar
+//---------------------------------------------------------------//
+
 document.getElementById("cursos__boton-filtrar").addEventListener('click', function (event) {
     event.preventDefault();
 
@@ -47,11 +61,3 @@ document.getElementById("cursos__boton-filtrar").addEventListener('click', funct
 
     cargarCursos(cursosFiltrados);
 });
-
-// Fetch para obtener los cursos
-fetch("../data/cursos.json")
-    .then(response => response.json())
-    .then(data => {
-        cursos = data;
-        cargarCursos(cursos);
-    });
