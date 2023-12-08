@@ -448,7 +448,7 @@ main{
     margin-top: 100px;
 }
 
-.register__contenedor-datos-usuario{
+.register__formulario-usuario{
     height: 550px;
     width: 400px;
     border: 2px  var(--black)  solid;
@@ -457,7 +457,7 @@ main{
     align-items: center;
 }
 
-.register__contenedor-datos-usuario h2{
+.register__formulario-usuario h2{
     color: var(--white);
     font-size: 30px;
     font-weight: bold;
@@ -900,7 +900,7 @@ main{
     }
 
     /* Nuevo-usuario.html */
-    .register__contenedor-datos-usuario{
+    .register__formulario-usuario{
         margin-top: -110px;
     }
 

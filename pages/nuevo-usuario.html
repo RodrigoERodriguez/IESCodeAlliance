@@ -10,7 +10,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="../styles/main.css">
     <!--Favicon-->
-    <link rel="stylesheet" href="../assets/multimedia/imagenes-logos/Favicon-ICA.ico">
+    <!-- <link rel="stylesheet" href="../assets/multimedia/imagenes-logos/Favicon-ICA.ico"> -->
 
     <title>Registrate - IesCodeAlliance</title>
 </head>
@@ -24,16 +24,16 @@
 
     <main class="register__contenedor-nuevo-usuario"><!--Comienzo Main-->
         <div class="register__nuevo-usuario">
-            <div class="register__contenedor-datos-usuario">
+            <form id="register__formulario-usuario" class="register__formulario-usuario">
                 <h2 class="inicio-sesion">Registrate</h2>
-                <input class="register_datos" type="name" name="correo" placeholder="Ingresa tu nombre"><br>
-                <input class="register_datos" type="surname" name="correo" placeholder="Ingresa tu apellido"><br>
-                <input class="register_datos" type="email" name="correo" placeholder="Ingresa tu correo"><br>
-                <input class="register_datos" type="password" name="contraseña" placeholder="Ingresa una contraseña"><br>
-                <input class="register__boton-registrate" type="submit" name="registrate-gratis" id="Enviar" value="Registrate"><br>
+                <input id="register__datos-name" class="register_datos" type="name" name="correo" placeholder="Ingresa tu nombre" required autofocus><br>
+                <input id="register__datos-surname" class="register_datos" type="surname" name="correo" placeholder="Ingresa tu apellido" required><br>
+                <input id="register__datos-email" class="register_datos" type="email" name="correo" placeholder="Ingresa tu correo" required><br>
+                <input id="register__datos-password" class="register_datos" type="password" name="contraseña" placeholder="Ingresa una contraseña" required><br>
+                <input class="register__boton-registrate" type="submit" name="registrate" id="Enviar" value="Registrate"><br>
                 <a href="#" class="register__ayuda">¿Necesitas ayuda?</a>        
                 <h4 class="register__usuario">¿Ya tienes cuenta en IES CODE ALLIANCE? <a href="inicio-sesion.html" class="register__iniciar-sesion">Inicia sesion.</a></h4>
-            </div>
+            </form>
         </div>
     </main><!--Fin Main-->
 
@@ -57,6 +57,8 @@
     </footer>
 
     <!-- Inicio SCRIPT -->
+    <script src="../js/nuevoUsuario.js"
+    ></script>
     <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"

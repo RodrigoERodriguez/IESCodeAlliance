@@ -10,7 +10,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="../styles/main.css">
     <!--Favicon-->
-    <link rel="stylesheet" href="../assets/multimedia/imagenes-logos/Favicon-ICA.ico">
+    <!-- <link rel="stylesheet" href="../assets/multimedia/imagenes-logos/Favicon-ICA.ico"> -->
 
     <title>Iniciar sesion - IesCodeAlliance</title>
 </head>
@@ -23,16 +23,16 @@
     </header>
 
     <main class="log__contenedor"><!--Comienzo Main-->
-        <div class="log__contenedor-inicio-de-sesion">
-            <div class="log__contenedor-datos">
+        <div class="log__inicio-de-sesion">
+            <form id="log__formulario-inicio-sesion" class="log__formulario-inicio-sesion">
                 <h2 class="inicio-sesion">Inicia sesión</h2>
-                <input class="log__datos" type="email" name="correo" placeholder="Ingresa tu correo"><br>
-                <input class="log__datos" type="password" name="contraseña" placeholder="Ingresa una contraseña"><br>
-                <a href="inicio.html"><input class="log__iniciar-sesion" type="submit" name="iniciar-sesion" id="Enviar" value="Iniciar sesion"></a><br>
+                <input id="log__datos-email" class="log__datos" type="email" name="correo" placeholder="Ingresa tu correo" required autofocus><br>
+                <input id="log__datos-password" class="log__datos" type="password" name="contraseña" placeholder="Ingresa una contraseña"><br>
+                <input class="log__iniciar-sesion" type="submit" name="iniciar-sesion" id="Enviar" value="Iniciar sesion"><br>
                 <input class="log__chk-recuerdame" type="checkbox"><label class="log__chk-texto-recuerdame">Recuerdame</label>
                 <a href="#" class="log__ayuda">¿Necesitas ayuda?</a>
                 <h4 class="log__Suscríbete">¿Primera vez en IES CODE ALLIANCE? <a href="nuevo-usuario.html" class="Suscríbete">Suscríbete ahora.</a></h4>
-            </div>
+            </form>
         </div>
     </main>
 
@@ -56,6 +56,8 @@
     </footer>
 
     <!-- Inicio SCRIPT -->
+    <script src="../js/inicioSesion.js"
+    ></script>
     <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
