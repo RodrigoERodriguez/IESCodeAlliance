@@ -16,6 +16,9 @@ const botonLogOut = document.querySelector('#app__dropdown-boton-cerrar-sesion')
 //---------------------------------------------------------------//
 
 botonLogOut.addEventListener('click', () => {
+    console.log(botonLogOut);
+
     localStorage.removeItem('inicioSesion');
     window.location.href = '../pages/inicio-sesion.html';
+
 })

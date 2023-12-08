@@ -364,7 +364,7 @@ main{
     padding: 50px;
 }
 
-.log__contenedor-inicio-de-sesion{
+.log__inicio-de-sesion{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -373,7 +373,7 @@ main{
     margin-top: 100px;
 }
 
-.log__contenedor-datos{
+.log__formulario-inicio-sesion{
     height: 500px;
     width: 400px;
     border: 2px  var(--black)  solid;
@@ -382,7 +382,7 @@ main{
     align-items: center;
 }
 
-.log__contenedor-datos h2{
+.log__formulario-inicio-sesion h2{
     color: var(--white);
     font-size: 30px;
     font-weight: bold;
@@ -432,6 +432,8 @@ main{
 .log__ayuda{
     font-size: 15px;
     margin-left: 20px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .log__ayuda:hover{
@@ -786,7 +788,7 @@ main{
 }
 
 .novedades__video-categoria img{
-    height: 400px;
+    height: 200px;
     width: auto;
 }
 
