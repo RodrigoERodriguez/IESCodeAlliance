@@ -17,11 +17,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    outline: none;
-    text-decoration: none;
-    list-style: none;
-    transition: all .2s linear;
 }
 
 html{
@@ -326,6 +321,7 @@ main{
 .main__card {
     background-color:  var(--orange) ;
     color:  var(--black) ;
+    margin-bottom: 20px;
 }
 
 .main__questions {
@@ -861,6 +857,10 @@ main{
     }
 
     .app__elementos-visuales{
+        display: none;
+    }
+
+    .app__dropdown-cerrar-sesion{
         display: none;
     }
 

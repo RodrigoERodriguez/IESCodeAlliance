@@ -25,7 +25,7 @@ inicioSesion.addEventListener('submit', (e) =>{
     if(validacionDeUsuario){
         console.log('se logeo');
 
-        window.location.href = '../pages/inicio.html';
+        window.location.href = './inicio.html';
         localStorage.setItem('inicioSesion', JSON.stringify(validacionDeUsuario));
     }
     else{

@@ -32,7 +32,7 @@ registro.addEventListener('submit', (e) => {
         localStorage.setItem('usuarios', JSON.stringify(usuario));
         console.log('se registro piola');
 
-        window.location.href = '../pages/inicio-sesion.html';
+        window.location.href = './inicio-sesion.html';
     }
 
     //---------------------------------------------------------------//
