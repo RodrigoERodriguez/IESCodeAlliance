@@ -23,13 +23,15 @@ inicioSesion.addEventListener('submit', (e) =>{
     
     const validacionDeUsuario = usuario.find(Usuario => Usuario.email === datosEmail && Usuario.password === datosPassword);
     if(validacionDeUsuario){
-        console.log('se logeo');
-
         window.location.href = './inicio.html';
         localStorage.setItem('inicioSesion', JSON.stringify(validacionDeUsuario));
     }
     else{
-        console.log('usuario y/o contraseña incorrecto');
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Usuario y/o contraseña incorrecto"
+        });
     }
 
     //---------------------------------------------------------------//

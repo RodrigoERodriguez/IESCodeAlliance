@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "sweetalert2": "^11.10.1",
+    "toastify-js": "^1.12.0"
+  }
+}

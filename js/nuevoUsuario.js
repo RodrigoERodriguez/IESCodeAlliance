@@ -25,12 +25,15 @@ registro.addEventListener('submit', (e) => {
     const usuarioRegistrado = usuario.find(Usuarios => Usuarios.email === datosEmail);
 
     if(usuarioRegistrado) {
-        console.log('ta registrado');
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "El correo que intentas registrar ya se encuentra registrado"
+        });
     }
     else{
         usuario.push({ name: datosName, surname: datosSurname, email: datosEmail, password: datosPassword});
         localStorage.setItem('usuarios', JSON.stringify(usuario));
-        console.log('se registro piola');
 
         window.location.href = './inicio-sesion.html';
     }
